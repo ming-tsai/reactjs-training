@@ -4,20 +4,18 @@
         <meta charset="utf-8" />
         <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
         <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
         <title>React ⚛️</title>
     </head>
     <body>
         <div id="root"></div>
-        <script type="text/javascript">
-            let ul = React.createElement(
-                "ul",
-                { style: {color: "blue"} },
-                React.createElement("li", null, "Monday"),
-                React.createElement("li", null, "Tuesday"),
-                React.createElement("li", null, "Wednesday"),
-            );
+        <script type="text/babel">
             ReactDOM.render(
-                ul,
+                <ul>
+                    <li>🤖</li>
+                    <li>🤠</li>
+                    <li>🌝</li>
+                </ul>,
                 document.getElementById("root")
             );
         </script>
