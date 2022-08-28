@@ -58,13 +58,13 @@
 
         function App() {
             return (
-                <div>
+                <React.Fragment>
                     <Header name="K" />
                     <Main dishes={dishObjects} />
                     <Footer
                         year={new Date().getFullYear()}
                         company="K" />
-                </div>
+                </React.Fragment>
             )
         }
 
