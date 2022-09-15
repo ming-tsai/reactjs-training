@@ -1,7 +1,16 @@
 import './App.css';
+import { Link } from 'react-router-dom';
 
 export function Home() {
-  return <h1>My website.</h1>
+  return (
+  <div>
+    <nav>
+      <Link to="/">Home</Link>
+      <Link to="/about">About</Link>
+      <Link to="/contact">Contact</Link>
+    </nav>
+    <h1>My website.</h1>
+  </div>);
 }
 
 export function About() {
